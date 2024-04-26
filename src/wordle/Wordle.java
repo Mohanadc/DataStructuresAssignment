@@ -16,8 +16,8 @@ import static wordle.Wordle.letterFreqMap;
 
 public class Wordle {
 
-    //String fileName = "wordle/resources/dictionary.txt";
-    String fileName = "wordle/resources/extended-dictionary.txt";
+    String fileName = "wordle/resources/dictionary.txt";
+    //String fileName = "wordle/resources/extended-dictionary.txt";
     static List<String> dictionary = null;
     final int num_guesses = 5;
     final long seed = 42;
@@ -55,6 +55,8 @@ public class Wordle {
         String target = game.getRandomTargetWord();
         huffmanTree(dictionary);
         System.out.println(guessWordFreqMap);
+
+
 
         target = "abbey";
         //System.out.println("target: " + target);

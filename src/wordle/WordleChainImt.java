@@ -59,6 +59,7 @@ public class WordleChainImt {
         System.out.println("Number of collisons " + wordFreqMap.getNoOfCollisions());
         //System.out.println(guessWordFreqMap);
 
+        System.out.println("ascii encoding " + (wordFreqMap.size() * 8 * 5));
         target = "abbey";
         //System.out.println("target: " + target);
         game.play(target);
